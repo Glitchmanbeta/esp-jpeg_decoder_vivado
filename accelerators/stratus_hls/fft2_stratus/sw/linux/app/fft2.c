@@ -11,8 +11,8 @@ static unsigned out_offset;
 static unsigned size;
 
 const float ERR_TH = 0.05;
-#include "in_data"
-#include "out_data"
+#include "in_data.h"
+#include "out_data.h"
 
 /* User-defined code */
 static int validate_buffer(token_t *out, float *gold)
