@@ -2603,7 +2603,7 @@ end process fsm_fwd_out;
         
         if mosi.b.ready = '1' and (reg.cpu_msg /= CPU_WRITE_ATOM or bresp_valid = '1') then
         
-          if unsigned(xreg.atop) > 0 then
+          if unsigned(xreg.atop) > 0 and USE_SPANDEX /= 0 then
             reg.state := load_rsp;
           else
 
