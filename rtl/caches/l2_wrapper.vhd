@@ -933,6 +933,9 @@ begin  -- architecture rtl of l2_wrapper
     somi.b.user  <= (others => '0');
     somi.b.valid <= '0';
 
+    -- Set L2 cache bresp channel as always ready
+    bresp_ready <= '1';
+
 -------------------------------------------------------------------------------
 -- FSM: Bridge from AHB slave to L2 cache frontend input
 -------------------------------------------------------------------------------
