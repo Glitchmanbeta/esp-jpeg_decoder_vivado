@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld>
+  <accelerator name="jpeg_decoder" desc="Accelerator JPEG_DECODER" data_size="4" device_id="056" hls_tool="vivado_hls">
+    <param name="test" desc="test" />
+  </accelerator>
+</sld>
